@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header Layout</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- Top section: Left and right -->
+        <div class="top_section">
+          <div class="left_section">
+            <img src="assets/Box.svg" alt="box_icon" />
+            <img
+              src="assets/logo.png"
+              alt="Top Image"
+              class="top-image"
+              height="25"
+              width="96"
+            />
+            <div class="branch-dropdown">
+              <select id="branch-selector">
+                <option value="lagos">Branch</option>
+                <option value="lagos">Lagos</option>
+                <option value="abuja">Abuja</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="right_section">
+            <img src="assets/NotificationBox.svg" alt="notification_icon" />
+            <img src="assets/message.svg" alt="message_icon" />
+            <img src="assets/UserBox.svg" alt="user_icon" />
+          </div>
+        </div>
+
+        <!-- Center section: Navigation menu -->
+        <div class="center_section">
+          <nav>
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">All Suppliers</a>
+            <a href="#">Purchase Order</a>
+            <a href="#">Payments</a>
+            <a href="#">Supplier's Return</a>
+            <a href="#">Product Request</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="bottom_section">
+          <h2>Procurement Dashboard</h2>
+          <div class="button_group">
+            <button class="icon-button">
+              <i class="fas fa-filter"></i> Add Item
+            </button>
+            <button class="button">
+              <i class="fas fa-download"></i> Download Report
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

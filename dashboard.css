@@ -1,0 +1,181 @@
+body {
+    background: #ffffff;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+.top_section {
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Vertically align left and right sections */
+    padding: 10px 20px;
+    border-bottom: 1px solid #091E4224;
+}
+
+.top-image{
+    margin-right: 50px;
+}
+
+.left_section,
+.right_section {
+    display: flex;
+    align-items: center; /* Ensure icons and logos are vertically aligned */
+}
+
+/* Branch Dropdown */
+.branch-dropdown {
+    margin-right: 15px; /* Space before icons */
+}
+
+.branch-dropdown select {
+    font-size: 0.9rem;
+    padding: 8px 25px; /* Add padding for dropdown */
+    border: .5px solid #ddd; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #f8f9fc; /* Light background color */
+    color: #333; /* Text color */
+    cursor: pointer;
+    appearance: none; /* Remove default dropdown styling */
+    transition: all 0.3s ease;
+}
+
+.branch-dropdown select:hover {
+    border-color: #007bff; /* Blue border on hover */
+}
+
+.branch-dropdown select:focus {
+    outline: none;
+    border-color: #007bff; /* Blue border when focused */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+/* Adjust dropdown on smaller screens */
+@media screen and (max-width: 768px) {
+    .branch-dropdown {
+        margin-right: 10px; /* Reduce spacing for smaller screens */
+    }
+
+    .branch-dropdown select {
+        font-size: 0.8rem; /* Smaller font size */
+        padding: 4px 8px; /* Adjust padding */
+    }
+}
+
+
+.center_section {
+    background: #ffffff;
+    padding: 10px 30px;
+    text-align: left; /* Center-align content for better responsiveness */
+}
+
+.center_section nav {
+    display: inline-flex; /* Center the navigation links inline */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center links on smaller screens */
+    gap: 15px; /* Add spacing between nav links */
+}
+
+/* Style for the navigation links */
+.center_section nav a {
+    text-decoration: none; /* Remove default underline */
+    color: #333; /* Default link color */
+    font-size: 0.9rem;
+    padding: 10px 15px; /* Padding for better spacing */
+    position: relative; /* Make the link relative for pseudo-elements */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Active state */
+.center_section nav a.active {
+    color: #007bff; /* Active link text color */
+}
+
+/* Blue underline effect for the active link */
+.center_section nav a.active::after,
+.center_section nav a:hover::after {
+    content: ''; /* Add a pseudo-element */
+    position: absolute;
+    bottom: -10px; /* Position it outside the padding area */
+    left: 0;
+    width: 100%; /* Span the entire width of the link */
+    height: 3px; /* Height of the underline */
+    background-color: #007bff; /* Blue color for the underline */
+}
+
+/* Hover effect */
+.center_section nav a:hover {
+    color: #007bff; /* Change text color on hover */
+}
+
+.right_section img {
+    margin-left: 15px;
+}
+
+main {
+    padding: 20px 30px;
+}
+main .bottom_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .bottom_section h2{
+    
+}
+
+/* Media Queries for Responsiveness */
+
+/* For smaller tablets and mobile devices (768px and below) */
+@media screen and (max-width: 768px) {
+    .top_section {
+        flex-direction: column; /* Stack the left and right sections vertically */
+        align-items: center; /* Center-align content */
+        text-align: center;
+    }
+
+    .center_section {
+        padding: 10px 15px; /* Reduce padding */
+    }
+
+    .center_section nav a {
+        font-size: 0.8rem; /* Smaller font size for nav links */
+        padding: 8px 10px; /* Adjust padding */
+    }
+
+    .right_section img {
+        margin-left: 10px; /* Reduce spacing between icons */
+    }
+}
+
+/* For very small devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .top_section {
+        padding: 10px 10px; /* Reduce padding */
+    }
+
+    .left_section img,
+    .right_section img {
+        width: 20px; /* Scale down icons */
+        height: auto;
+    }
+
+    .center_section nav {
+        gap: 10px; /* Reduce spacing between nav links */
+    }
+
+    .center_section nav a {
+        font-size: 0.7rem; /* Further reduce font size */
+        padding: 5px 8px; /* Adjust padding */
+    }
+}
