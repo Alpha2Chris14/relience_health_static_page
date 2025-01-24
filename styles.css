@@ -1,0 +1,276 @@
+/* Body Styling */
+
+
+  /* Body Styling */
+body {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f7f8f9,#f7f8f9,#f7f8f9,#f7f8f9,#f7f8f9, #d1d8f0);
+}
+
+/* Logo Container */
+.logo-container {
+    margin-bottom: 20px; /* Space between the logo and the card */
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px; /* Set a max width for the logo */
+    width: 100%;
+    height: auto;
+}
+
+/* Arrow Icon Styling */
+.arrow-icon {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  font-size: 1.25rem; /* Adjust size */
+  color: #434141; /* Customize color */
+}
+
+.arrow-icon:hover {
+  color: #0056b3; /* Optional: Change color on hover */
+  cursor: pointer;
+}
+
+/* Container for Login Card */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Login Card Styling */
+.login-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 25px;
+    width: 100%;
+}
+
+  
+  /* Container for Centering */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  /* Login Card Styling */
+.login-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 25px;
+    width: 100%;
+  }
+  
+  /* Logo and Subtitle (Left Alignment) */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+    text-align: left; /* Align logo to the left */
+  }
+  
+  .subtitle {
+    font-size: 0.75rem;
+    color: #626F86;
+    /* margin-bottom: 10px; */
+    text-transform: uppercase;
+    text-align: left; /* Align subtitle to the left */
+  }
+  
+  /* Main Heading (Left Alignment) */
+  h2 {
+    font-size: 1.2rem;
+    /* font-size: 1.5rem; */
+    margin-bottom: 20px;
+    margin-top: 0px !important;
+    color: #172B4D;
+    text-align: left; /* Align heading to the left */
+  }
+  
+  
+
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input field */
+    font-size: 0.75rem;
+    color: #44546F;
+    text-align: left;
+}
+
+.p-label{
+    margin-top:10px;
+}
+  
+  
+
+  .input-group input,
+.iti input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.87rem;
+  box-sizing: border-box;
+  color: #172B4D;
+  margin-bottom: 20px; /* Add spacing between inputs and next labels */
+}
+  
+  /* Focus Effect for Input Fields */
+  .input-group input:focus,
+  .iti input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Intl-Tel-Input Specific Styling */
+  .iti {
+    width: 100%;
+  }
+  
+  .iti__flag-container {
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+    border-radius: 5px 0 0 5px; /* Rounded left side */
+  }
+  
+  .iti__selected-flag {
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .iti__flag {
+    height: 15px;
+    width: 20px;
+  }
+  
+  .iti__dropdown {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .iti__country {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .iti__country:hover,
+  .iti__country--highlight {
+    background-color: #f0f4ff;
+  }
+  
+  /* Toggle Password Button */
+  .input-group {
+    position: relative;
+  }
+  
+
+  /* Styling for the eye icon button */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    transform: translateY(-50%); /* Vertically center the icon */
+    background: none;
+    border: none;
+    font-size: 0.85rem; /* Adjust size if necessary */
+    cursor: pointer;
+    color: #091E424F;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  
+  
+  /* Options (Checkbox and Link) */
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+  }
+  
+  .options a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  .options label{
+    color:#172B4D;
+    font-weight: 500;
+  }
+  
+  /* Proceed Button */
+  /* Proceed Button */
+.proceed-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 15px;
+    background: #0C66E4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .proceed-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Horizontal Rule Styling */
+  hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Center Align Forgot Password */
+  .forgot-password {
+    text-align: center;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #44546F;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .login-card {
+      padding: 20px 15px;
+    }
+  }
+  

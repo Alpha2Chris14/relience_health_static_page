@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Intl-Tel-Input CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Center the image at the top */
+      .top-image {
+        display: block;
+        margin: 0 auto;
+        width: 100px; /* Adjust the width of the image as needed */
+        padding-top: 20px; /* Space between the top of the page and the image */
+      }
+      body {
+        text-align: center; /* Center content in the body */
+      }
+    </style>
+  </head>
+  <body>
+    <i class="fas fa-arrow-left arrow-icon"></i>
+    <!-- Image at the top center -->
+    <img
+      src="assets/logo.png"
+      alt="Top Image"
+      class="top-image"
+      height="25"
+      width="96"
+      alt="Atlas Logo"
+    />
+
+    <div class="container">
+      <div class="login-card">
+        <div class="subtitle">PROCUREMENT</div>
+
+        <!-- Heading -->
+        <h2>Sign in to your account</h2>
+
+        <!-- Phone Number Input -->
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" />
+
+        <!-- Password Input -->
+        <label for="password" class="p-label">Password</label>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Password" />
+          <button type="button" class="toggle-password">
+            <i class="fas fa-eye"></i>
+            <!-- Use filled eye icon (default) -->
+          </button>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="options">
+          <label> <input type="checkbox" /> Keep me signed in </label>
+        </div>
+
+        <!-- Proceed Button -->
+        <button class="proceed-btn">Proceed</button>
+
+        <!-- Horizontal Rule -->
+        <hr />
+
+        <!-- Forgot Password Link -->
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </div>
+    </div>
+
+    <!-- Intl-Tel-Input JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
