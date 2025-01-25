@@ -56,12 +56,193 @@
         <div class="bottom_section">
           <h2>Procurement Dashboard</h2>
           <div class="button_group">
-            <button class="icon-button">
-              <i class="fas fa-filter"></i> Add Item
-            </button>
-            <button class="button">
+            <button class="btn"><i class="fas fa-filter"></i> Filter</button>
+            <button class="btn solid">
               <i class="fas fa-download"></i> Download Report
             </button>
+          </div>
+        </div>
+
+        <!-- New section starts here -->
+        <div class="dashboard-grid">
+          <!-- First Card -->
+          <div class="item item-1 card">
+            <h3>Received Suppliers</h3>
+            <div class="card-content">
+              <div class="main-stat">60</div>
+              <div class="comparison">
+                <span class="percentage positive">⬆ 12.95%</span>
+                <span class="description">Compared to last month</span>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="item item-2 card">
+            <h3>Orders Processed</h3>
+            <div class="card-content">
+              <div class="main-stat">120</div>
+              <div class="comparison">
+                <span class="percentage negative">⬇ 8.45%</span>
+                <span class="description">Compared to last month</span>
+              </div>
+            </div>
+          </div>
+          <!-- Third Card -->
+          <div class="item item-3 card">
+            <h3>Revenue Generated</h3>
+            <div class="card-content">
+              <div class="main-stat">₦5,250,000</div>
+              <div class="comparison">
+                <span class="percentage positive">⬆ 5.32%</span>
+                <span class="description">Compared to last month</span>
+              </div>
+            </div>
+          </div>
+          <div class="item item-4">
+            <h3>Top Suppliers</h3>
+            <ul>
+              <li>Emzor Pharmaceuticals - ₦235,000</li>
+              <li>Fidson Healthcare - ₦122,040</li>
+              <li>Emzor Pharmaceuticals - ₦72,320</li>
+              <li>Fidson Healthcare - ₦63,470</li>
+              <li>Emzor Pharmaceuticals - ₦4,609</li>
+            </ul>
+          </div>
+          <div class="item item-5">
+            <h3>Orders Pending Arrival</h3>
+            <p>15</p>
+          </div>
+          <div class="item item-6">
+            <h3>Orders Passed Delivery Date</h3>
+            <p>10</p>
+          </div>
+          <div class="item item-7">
+            <h3>Average Processing Time</h3>
+            <p>06 Days | 14 Hours | 53 Minutes</p>
+          </div>
+          <div class="item-8">
+            <div class="chart-card first_grid">
+              <h3>Shelf Life Analysis</h3>
+              <p>Ratio of received products with expiry less than 18 months</p>
+              <div class="svg-container">
+                <!-- Replace this with your actual SVG file's content -->
+                <svg
+                  width="212"
+                  height="212"
+                  viewBox="0 0 212 212"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M106 8.34885C118.824 8.34885 131.522 10.8747 143.37 15.7821C155.217 20.6895 165.982 27.8825 175.05 36.9502C184.118 46.018 191.311 56.783 196.218 68.6305C201.125 80.4781 203.651 93.1763 203.651 106C203.651 118.824 201.125 131.522 196.218 143.37C191.311 155.217 184.118 165.982 175.05 175.05C165.982 184.118 155.217 191.311 143.369 196.218C131.522 201.125 118.824 203.651 106 203.651C93.1763 203.651 80.4781 201.125 68.6305 196.218C56.7829 191.31 46.018 184.118 36.9502 175.05C27.8825 165.982 20.6895 155.217 15.7821 143.369C10.8747 131.522 8.34887 118.824 8.34888 106C8.34888 93.1762 10.8747 80.4781 15.7821 68.6305C20.6896 56.7829 27.8825 46.0179 36.9503 36.9502C46.018 27.8824 56.783 20.6895 68.6306 15.7821C80.4782 10.8747 93.1764 8.34884 106 8.34885L106 8.34885Z"
+                    stroke="#F3F4F6"
+                    stroke-width="15.0233"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M82.2802 11.2735C104.196 5.78575 127.336 8.0667 147.758 17.7277C168.18 27.3886 184.621 43.8319 194.279 64.2557C203.937 84.6795 206.214 107.82 200.723 129.735C195.232 151.649 182.312 170.982 164.165 184.439C146.017 197.895 123.766 204.643 101.201 203.533C78.6361 202.423 57.1543 193.523 40.4159 178.35C23.6774 163.176 12.7179 142.669 9.40469 120.321C6.09148 97.973 10.6296 75.1678 22.2458 55.7908"
+                    stroke="#0C66E4"
+                    stroke-width="15.0233"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M106 27.1279C116.358 27.1279 126.614 29.168 136.183 33.1317C145.752 37.0954 154.447 42.9051 161.771 50.229C169.095 57.553 174.905 66.2478 178.868 75.817C182.832 85.3862 184.872 95.6424 184.872 106C184.872 116.358 182.832 126.614 178.868 136.183C174.905 145.752 169.095 154.447 161.771 161.771C154.447 169.095 145.752 174.905 136.183 178.868C126.614 182.832 116.358 184.872 106 184.872C95.6424 184.872 85.3862 182.832 75.817 178.868C66.2477 174.905 57.553 169.095 50.229 161.771C42.9051 154.447 37.0954 145.752 33.1317 136.183C29.168 126.614 27.1279 116.358 27.1279 106C27.1279 95.6424 29.168 85.3861 33.1317 75.8169C37.0954 66.2477 42.9051 57.5529 50.2291 50.229C57.553 42.9051 66.2478 37.0954 75.817 33.1317C85.3862 29.168 95.6424 27.1279 106 27.1279L106 27.1279Z"
+                    stroke="#F3F4F6"
+                    stroke-width="15.0233"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M106 27.1279C123.483 27.1279 140.47 32.9364 154.292 43.6406C168.114 54.3448 177.989 69.338 182.363 86.2644C186.738 103.191 185.364 121.091 178.459 137.152C171.554 153.213 159.509 166.525 144.216 174.995"
+                    stroke="#A3F94E"
+                    stroke-width="15.0233"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="legend">
+                <span class="dot less-18-months"></span> Less than 18 Months
+                <span class="dot more-18-months"></span> More than 18 Months
+              </div>
+            </div>
+
+            <div class="chart-card second_grid">
+              <h3>Storage Space</h3>
+              <p>Ratio of used vs free storage space</p>
+              <div class="svg-container">
+                <svg
+                  width="216"
+                  height="200"
+                  viewBox="0 0 216 200"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_371_1943)">
+                    <path
+                      d="M193.714 98.9418C193.714 146.28 155.339 184.656 108 184.656C60.6613 184.656 22.2857 146.28 22.2857 98.9418C22.2857 51.6031 60.6613 13.2275 108 13.2275C155.339 13.2275 193.714 51.6031 193.714 98.9418ZM48 98.9418C48 132.079 74.8629 158.942 108 158.942C141.137 158.942 168 132.079 168 98.9418C168 65.8047 141.137 38.9418 108 38.9418C74.8629 38.9418 48 65.8047 48 98.9418Z"
+                      fill="#F1F2F4"
+                    />
+                  </g>
+                  <path
+                    d="M180.857 100C187.958 100 193.813 105.788 192.752 112.809C191.174 123.248 187.676 133.342 182.396 142.569C174.98 155.531 164.305 166.33 151.431 173.896C138.557 181.463 123.929 185.535 108.996 185.708C94.0637 185.882 79.345 182.151 66.2982 174.886C53.2513 167.62 42.329 157.072 34.6132 144.287C26.8975 131.501 22.656 116.921 22.3089 101.992C21.9619 87.0626 25.5213 72.3016 32.6346 59.1712C37.6984 49.8241 44.438 41.5342 52.481 34.6962C57.891 30.0969 65.8948 32.0263 69.634 38.0629C73.3732 44.0994 71.3837 51.941 66.2804 56.8784C61.8994 61.117 58.1717 66.016 55.2443 71.4198C50.2649 80.6111 47.7733 90.9438 48.0163 101.394C48.2592 111.845 51.2282 122.051 56.6293 131.001C62.0303 139.951 69.6759 147.334 78.8087 152.42C87.9415 157.506 98.2446 160.117 108.697 159.996C119.15 159.874 129.39 157.024 138.402 151.728C147.414 146.431 154.886 138.872 160.077 129.798C163.13 124.464 165.331 118.715 166.628 112.759C168.138 105.821 173.756 100 180.857 100Z"
+                    fill="#0C66E4"
+                  />
+                  <path
+                    d="M86.5946 103.127L92.8544 90.9297V90.8809H85.4228V89.0352H95.0126V90.9297L88.8896 103.127H86.5946ZM101.917 103.361C98.5478 103.361 96.536 100.559 96.536 96.086V96.0664C96.536 91.5938 98.5478 88.8008 101.917 88.8008C105.276 88.8008 107.298 91.5938 107.298 96.0664V96.086C107.298 100.559 105.276 103.361 101.917 103.361ZM101.917 101.535C103.919 101.535 105.091 99.4649 105.091 96.086V96.0664C105.091 92.6875 103.919 90.6367 101.917 90.6367C99.9052 90.6367 98.7431 92.6875 98.7431 96.0664V96.086C98.7431 99.4649 99.9052 101.535 101.917 101.535ZM112.024 96.0957C110.159 96.0957 109.017 94.7188 109.017 92.502V92.4922C109.017 90.295 110.159 88.918 112.024 88.918C113.89 88.918 115.022 90.295 115.022 92.4922V92.502C115.022 94.7188 113.89 96.0957 112.024 96.0957ZM112.952 103.127H111.145L120.14 89.0352H121.936L112.952 103.127ZM112.024 94.7676C112.913 94.7676 113.421 93.9375 113.421 92.5117V92.502C113.421 91.0664 112.913 90.2461 112.024 90.2461C111.136 90.2461 110.628 91.0664 110.628 92.502V92.5117C110.628 93.9375 111.136 94.7676 112.024 94.7676ZM121.048 103.244C119.183 103.244 118.05 101.867 118.05 99.6602V99.6504C118.05 97.4434 119.183 96.0664 121.048 96.0664C122.913 96.0664 124.046 97.4434 124.046 99.6504V99.6602C124.046 101.867 122.913 103.244 121.048 103.244ZM121.048 101.916C121.936 101.916 122.444 101.086 122.444 99.6602V99.6504C122.444 98.2149 121.936 97.4043 121.048 97.4043C120.159 97.4043 119.651 98.2149 119.651 99.6504V99.6602C119.651 101.086 120.159 101.916 121.048 101.916Z"
+                    fill="black"
+                  />
+                  <defs>
+                    <filter
+                      id="filter0_d_371_1943"
+                      x="9.58729"
+                      y="0.529096"
+                      width="196.825"
+                      height="196.825"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feMorphology
+                        radius="12.6984"
+                        operator="dilate"
+                        in="SourceAlpha"
+                        result="effect1_dropShadow_371_1943"
+                      />
+                      <feOffset />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_371_1943"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_371_1943"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <div class="legend">
+                <span class="dot less-18-months"></span> Used Space
+                <span class="dot more-18-months"></span> Free Space
+              </div>
+            </div>
           </div>
         </div>
       </main>
